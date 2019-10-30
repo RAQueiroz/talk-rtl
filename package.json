@@ -1,5 +1,5 @@
 {
-  "name": "spectacle-boilerplate",
+  "name": "talk-rtl",
   "version": "1.0.1",
   "description": "ReactJS Powered Presentation Framework",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.jsx .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "Formidable Labs <hello@formidable.com> (https://formidable.com)",
+  "author": "Rodrigo based on formidable boilerplate",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
