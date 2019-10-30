@@ -15,9 +15,9 @@ import {
 } from 'spectacle';
 
 import createTheme from 'spectacle/lib/themes/default';
-const images = {
-  goodWork: require('../assets/good-work.gif')
-};
+// const images = {
+//   goodWork: require('../assets/good-work.gif')
+// };
 require('normalize.css');
 
 const theme = createTheme(
@@ -79,7 +79,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="secondary" textColor="tertiary">
           <BlockQuote>
-            <Quote textSize="46">
+            <Quote textSize="52">
               Quanto mais um teste se aproxima da maneira que o usuário utiliza o software mais confiança ele nos dá.
             </Quote>
             <Cite margin="10px 0 0 30px">Kent C Dodds</Cite>
@@ -87,8 +87,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={5} textColor="tertiary" fit>
-            Quais são os usuários da nossa aplicação ? 
+            Quem são os usuários da nossa aplicação ? 
           </Heading>
+          <br />
           <Appear>
             <div>
               <Text textColor="primary">🧑   👨🏻‍💻</Text>
@@ -102,7 +103,44 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={5} textColor="tertiary">
-            Existe algum outro usuário 👽?
+            Existe algum outro usuário ?
+          </Heading>
+          <br />
+          <Text textColor="primary">👽</Text>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Heading size={5} textColor="tertiary">
+            Quando testamos detalhes de implementação nós adicionamos um novo usuário a nossa aplicação
+          </Heading>
+          {/* Pq adicionar um usuário é inútil ? */}
+        </Slide>
+        <Slide bgColor="secondary">
+          <Heading size={5} textColor="tertiary">
+            Efeitos de um teste que depende de detalhes de implementação
+          </Heading>
+          <br />
+          <br />
+          <Text textColor="primary">
+            <strong style={{ color: '#50C878' }}>Falso negativo:</strong> Meus testes estão passando mas a aplicação quebrou
+          </Text>
+          <br />
+          <br />
+          <Text textColor="primary">
+            <strong style={{ color: 'tomato' }}>Falso positivo:</strong> Minha aplicação está funcionando mas meus testes não estão passando
+          </Text>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Heading size={5} textColor="tertiary">
+            Mas afinal o que é um detalhe de implementação ?
+          </Heading>
+          <br />
+          <Text textColor="primary">
+            Detalhes de implementação são coisas que os usuários do nosso código não vão utilizar e na maioria das vezes nem sabem que existe.
+          </Text>
+        </Slide>
+        <Slide bgColor="secondary">
+          <Heading textColor="primary">
+          🤔 exemplo 🤔
           </Heading>
         </Slide>
         {/* <Slide>
